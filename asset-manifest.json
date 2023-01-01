@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nobodyclimb/static/css/main.76405f81.css",
-    "main.js": "/Nobodyclimb/static/js/main.36ff0191.js",
+    "main.js": "/Nobodyclimb/static/js/main.7ab284fd.js",
     "static/js/787.af26e8d7.chunk.js": "/Nobodyclimb/static/js/787.af26e8d7.chunk.js",
     "static/media/blog-left.png": "/Nobodyclimb/static/media/blog-left.82e38b3eb0f10617f9c9.png",
     "static/media/cont-intro.png": "/Nobodyclimb/static/media/cont-intro.d7a48c3ff03f65bd27ad.png",
@@ -26,13 +26,12 @@
     "static/media/icon_search.svg": "/Nobodyclimb/static/media/icon_search.fbe57863553992d93f4a92e07375903e.svg",
     "static/media/icon-mail.svg": "/Nobodyclimb/static/media/icon-mail.96d1ba52655d492f025fa77c9dfc6b29.svg",
     "static/media/arrow-right-circled.svg": "/Nobodyclimb/static/media/arrow-right-circled.8571589a63f58eff514a6f6e6f99a839.svg",
-    "static/media/nav-arrow-down.svg": "/Nobodyclimb/static/media/nav-arrow-down.13ed40d96ef0916a9f91651c0f55a15b.svg",
     "main.76405f81.css.map": "/Nobodyclimb/static/css/main.76405f81.css.map",
-    "main.36ff0191.js.map": "/Nobodyclimb/static/js/main.36ff0191.js.map",
+    "main.7ab284fd.js.map": "/Nobodyclimb/static/js/main.7ab284fd.js.map",
     "787.af26e8d7.chunk.js.map": "/Nobodyclimb/static/js/787.af26e8d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76405f81.css",
-    "static/js/main.36ff0191.js"
+    "static/js/main.7ab284fd.js"
   ]
 }
