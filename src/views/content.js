@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { ReactComponent as LogoIcon } from '../images/logo/Nobodylimb-white.svg';
 import imgintro from '../images/photo/cont-intro.png';
 import imgabout from'../images/photo/cont-about.jpg';
 import Button from '@mui/material/Button';
-import PersonCard from '../components/personCard';
-import CardArticle from '../components/cardArticle';
-import CardPhotoSelect from'../components/cardPhotoelect'
-
+import PersonCard from '../components/CardPerson';
+import CardBlog from '../components/CardBlog';
+import CardPhotoSelect from'../components/CardPhotoSelect';
 
 
 
@@ -103,6 +102,8 @@ const ContPhoto = styled.div`
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
+        margin-bottom:28px;
+
     }
     Button{
         margin-top:40px;
@@ -131,12 +132,14 @@ const ContAbout = styled.div`
         font-size: 32px;
         line-height: 150%;
         padding-top: 174px;
+        padding-bottom:8px;
+
 
     }
     p{
         font-family: 'Noto Sans TC';
         font-style: normal;
-        font-weight: 500;
+        font-weight:500;
         font-size: 16px;
         line-height: 150%;
         text-align: center;
@@ -161,18 +164,18 @@ const Content = () =>{
             </ContIntro>
             <ContPerson>
                 <PersonCard/>
-                <Button  variant="contained"  size="large">認識小人物</Button>
+                <Button  variant="contained"  size="large" >認識小人物</Button>
             </ContPerson>
             <ContBlog>
                 <h1>探索攀岩</h1>
                 <p>關於攀岩的各種知識和故事</p>
-                <CardArticle/>
+                <CardBlog/>
             </ContBlog>
             <ContPhoto>
                 <h1>精選影像</h1>
                 <p>看看小人物們攀岩的英姿吧</p>
                 <CardPhotoSelect/>
-                <Button  variant="outlined"  size="large">看更多影像</Button>
+                <Button  variant="outlined"  size="large"  >看更多影像</Button>
             </ContPhoto>
             <ContAbout>
                 <h2>關於小人物攀岩</h2>

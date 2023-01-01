@@ -14,13 +14,13 @@ import BlogRight from '../images/photo/blog-right.jpg';
 
 
 
-const CardArticleWrapper = styled.div`
+const CardBlogWrapper = styled.div`
     display: flex;
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 64px;
 `;
-const CardArticleLeft = styled.div`
+const CardBlogLeft = styled.div`
     width:265px;
     height:184px;
     background-image:url(${BlogLeft});
@@ -43,7 +43,7 @@ const CardArticleLeft = styled.div`
    
 
 `;
-const CardArticleMidLeft = styled.div`
+const CardBlogMidLeft = styled.div`
     width:265px;
     height:184px;
     background-image:url(${BlogMidLeft});
@@ -67,7 +67,7 @@ const CardArticleMidLeft = styled.div`
     }
 
 `;
-const CardArticleMidRight = styled.div`
+const CardBlogMidRight = styled.div`
     width:265px;
     height:184px;
     background-image:url(${BlogMidRight});
@@ -91,7 +91,7 @@ const CardArticleMidRight = styled.div`
     }
 
 `;
-const CardArticleRight = styled.div`
+const CardBlogRight = styled.div`
     width:265px;
     height:184px;
     background-image:url(${BlogRight});
@@ -113,24 +113,24 @@ const CardArticleRight = styled.div`
     }
 `;
                 
-const CardArticle = () =>{
+const CardBlog = () =>{
     return(
-        <CardArticleWrapper>
-            <CardArticleLeft>
+        <CardBlogWrapper>
+            <CardBlogLeft>
                 <h2>裝備介紹</h2>
-            </CardArticleLeft>
-            <CardArticleMidLeft>
+            </CardBlogLeft>
+            <CardBlogMidLeft>
                 <h2>技巧介紹</h2>
-            </CardArticleMidLeft>
-            <CardArticleMidRight>
+            </CardBlogMidLeft>
+            <CardBlogMidRight>
                 <h2>技術研究</h2>
-            </CardArticleMidRight>
-            <CardArticleRight>
+            </CardBlogMidRight>
+            <CardBlogRight>
                 <h2>比賽介紹</h2>
-            </CardArticleRight>
-        </CardArticleWrapper>
+            </CardBlogRight>
+        </CardBlogWrapper>
 
     );
 };
 
-export default CardArticle;              
+export default CardBlog;              

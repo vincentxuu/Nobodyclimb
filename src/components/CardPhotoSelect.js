@@ -17,7 +17,6 @@ const CardPhotoSelectWrapper = styled.div`
 `;
 
 const CardPhotoBig = styled.div`
-
     img{
         width:740px;
         height:312px;
@@ -28,41 +27,6 @@ const CardPhotoSmall = styled.div`
     width:368px;
     height:312px;
 `;
-
-
-//const CardPhotoSelect = () =>{
-    //return(
-        //<CardPhotoSelectWrapper>
-               // <CardPhotoBig>
-                    //<img style = {{width:'100%'}}  src={phototopleft} alt="Background" />
-                //</CardPhotoBig>
-
-                //<CardPhotoSmall>
-                    //<img style = {{width:'100%'}}  src={phototopright} alt="Background" />
-                //</CardPhotoSmall>
-
-                //<CardPhotoSmall>
-                    //<img style = {{width:'100%'}} src={photomidleft} alt="Background" />
-                //</CardPhotoSmall>
-
-                //<CardPhotoBig>
-                    //<img style = {{width:'100%'}} src={photomidright} alt="Background" />
-                //</CardPhotoBig>
-
-                //<CardPhotoBig>
-                    //<img style = {{width:'100%'}} src={photobottomleft} alt="Background" />
-                //</CardPhotoBig>
-
-                //<CardPhotoSmall>
-                    //<img style = {{width:'100%'}}  src={photobottomright} alt="Background" />
-                //</CardPhotoSmall>
-        //</CardPhotoSelectWrapper>
-    //);
-//};
-
-//export default CardPhotoSelect;
-
-
 
 const CardPhotoSelect = () => {
   return (

@@ -4,19 +4,20 @@ import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import InputBase from '@mui/material/InputBase';
-
-
 import { ReactComponent as LogoIcon } from '../images/logo/Nobodylimb-black.svg';
 import {ReactComponent as SearchIcon} from '../images/icon/icon_search.svg';
-import {ReactComponent as ArrowIcon} from '../images/icon/nav-arrow-down.svg';
+import { HashRouter, Route, Link } from "react-router-dom";
+
 const HeaderWrapper = styled.div`
-    height:80px;
+    height:83px;
     background-color:#FFFFFF;
     display: flex;
     justify-content: space-between;
 `;
 const HeaderRight = styled.div`
     display: flex;
+    justify-content: center;
+    align-items: center;
 `
 const HeaderLeft = styled.div`
     display: flex;
@@ -43,15 +44,6 @@ const Nav = styled.div`
         text-decoration: none;
         color: black;
     };
-    svg{
-        position: relative;
-        top: 50%;  
-        left:3%;
-        transform: translate(-50%, -50%);
-    };
-    &:hover::after {
-        
-    }
 `;
 const SignIn = styled.div`
     padding:28px 32px;
@@ -78,10 +70,10 @@ const Header = () =>{
             </HeaderRight>
             <HeaderLeft>
             <Nav>
-                <a href="#">人物誌</a>
-                <a href="#">岩場介紹</a>
-                <a href="#">攝影集</a>
-                <a href="#">專欄文章<ArrowIcon/></a>
+                <Link to="/Person">人物誌</Link>
+                <Link to="/ClimbSpot">岩場介紹</Link>
+                <Link to="/Photo">攝影集</Link>
+                <Link to="/Blog">專欄文章</Link>
             </Nav>
             <SignIn>
                 <Button  variant="outlined" color='inherit' size="large">登入</Button>
