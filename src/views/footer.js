@@ -8,6 +8,7 @@ import {ReactComponent as IconMail} from '../images/icon/icon-mail.svg';
 
 
 const FooterWapper = styled.div`
+    height:160px;
     background: #1B1A1A;
     display:flex;
     justify-content:space-between;

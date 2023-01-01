@@ -20,6 +20,8 @@ const HeaderRight = styled.div`
 `
 const HeaderLeft = styled.div`
     display: flex;
+    justify-content: center;
+    align-items: center;
 `
 const Logo = styled.div`
     background-color:#FFE70C;
@@ -43,7 +45,7 @@ const Nav = styled.div`
     };
     svg{
         position: relative;
-        top: 70%;  
+        top: 50%;  
         left:3%;
         transform: translate(-50%, -50%);
     };

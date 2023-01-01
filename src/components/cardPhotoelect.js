@@ -17,14 +17,16 @@ const CardPhotoSelectWrapper = styled.div`
 `;
 
 const CardPhotoBig = styled.div`
-    width:740px;
-    height:312px;
-    padding:6px 6px 6px 6px;
+
+    img{
+        width:740px;
+        height:312px;
+        object-fit: cover;
+    }
 `;
 const CardPhotoSmall = styled.div`
     width:368px;
     height:312px;
-    padding:6px 6px 6px 6px;
 `;
 
 
@@ -77,14 +79,14 @@ const CardPhotoSelect = () => {
         <Grid item xs={6} md={4}>
             <div className='grid-elements'>
                 <CardPhotoSmall>
-                    <img style = {{width:'100%'}}  src={phototopright} alt="Background" />
+                    <img style = {{height:'100%'}}  src={phototopright} alt="Background" />
                 </CardPhotoSmall>
             </div>
         </Grid>
         <Grid item xs={6} md={4}>
             <div className='grid-elements'>
                 <CardPhotoSmall>
-                    <img style = {{width:'100%'}} src={photomidleft} alt="Background" />
+                    <img style = {{height:'100%'}} src={photomidleft} alt="Background" />
                 </CardPhotoSmall>            
             </div>
         </Grid>
@@ -93,6 +95,20 @@ const CardPhotoSelect = () => {
                 <CardPhotoBig>
                     <img style = {{width:'100%'}} src={photomidright} alt="Background" />
                 </CardPhotoBig>          
+            </div>
+        </Grid>
+        <Grid item xs={6} md={8}>
+            <div className='grid-elements'>
+                <CardPhotoBig>
+                    <img style = {{width:'100%'}}  src={photobottomleft} alt="Background" />
+                </CardPhotoBig>
+            </div>
+        </Grid>
+        <Grid item xs={6} md={4}>
+            <div className='grid-elements'>
+                <CardPhotoSmall>
+                    <img style = {{height:'100%'}}  src={photobottomright} alt="Background" />
+                </CardPhotoSmall>
             </div>
         </Grid>
       </Grid>

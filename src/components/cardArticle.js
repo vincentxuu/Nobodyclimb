@@ -6,10 +6,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import PersonLeft from '../images/photo/personleft.jpg';
-import PersonMid from '../images/photo/personmid.jpg';
-import PersonRight from '../images/photo/personright.jpg';
-import { ReactComponent as ArrowRightCircle} from'../images/icon/arrow-right-circled.svg';
+import BlogLeft from '../images/photo/blog-left.png';
+import BlogMidLeft from '../images/photo/blog-mid-left.jpg';
+import BlogMidRight from '../images/photo/blog-mid-right.jpg';
+import BlogRight from '../images/photo/blog-right.jpg';
+
 
 
 
@@ -22,7 +23,9 @@ const CardArticleWrapper = styled.div`
 const CardArticleLeft = styled.div`
     width:265px;
     height:184px;
-    background-image:url(${PersonLeft});
+    background-image:url(${BlogLeft});
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: multiply;
     background-size:cover;
     border-radius: 8px;
     color:#FFFF;
@@ -35,7 +38,7 @@ const CardArticleLeft = styled.div`
         line-height: 150%;
         position: relative;
         top: 50%;  
-        transform: translate(0, -100%);
+        transform: translate(0, -50%);
     }
    
 
@@ -43,7 +46,9 @@ const CardArticleLeft = styled.div`
 const CardArticleMidLeft = styled.div`
     width:265px;
     height:184px;
-    background-image:url(${PersonLeft});
+    background-image:url(${BlogMidLeft});
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: multiply;
     background-size:cover;
     border-radius: 8px;
     color:#FFFF;
@@ -58,14 +63,16 @@ const CardArticleMidLeft = styled.div`
         line-height: 150%;
         position: relative;
         top: 50%;  
-        transform: translate(0, -100%);
+        transform: translate(0, -50%);
     }
 
 `;
 const CardArticleMidRight = styled.div`
     width:265px;
     height:184px;
-    background-image:url(${PersonLeft});
+    background-image:url(${BlogMidRight});
+    background-color: rgba(0, 0, 0, .4);
+    background-blend-mode: multiply;
     background-size:cover;
     border-radius: 8px;
     color:#FFFF;
@@ -80,14 +87,16 @@ const CardArticleMidRight = styled.div`
         line-height: 150%;
         position: relative;
         top: 50%;  
-        transform: translate(0, -100%);
+        transform: translate(0, -50%);
     }
 
 `;
 const CardArticleRight = styled.div`
     width:265px;
     height:184px;
-    background-image:url(${PersonLeft});
+    background-image:url(${BlogRight});
+    background-color: rgba(0, 0, 0, .3);
+    background-blend-mode: multiply;
     background-size:cover;
     border-radius: 8px;
     color:#FFFF;
@@ -100,7 +109,7 @@ const CardArticleRight = styled.div`
         line-height: 150%;
         position: relative;
         top: 50%;  
-        transform: translate(0, -100%);
+        transform: translate(0, -50%);
     }
 `;
                 

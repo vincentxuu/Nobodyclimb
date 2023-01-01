@@ -141,6 +141,7 @@ const ContAbout = styled.div`
         line-height: 150%;
         text-align: center;
         width: 582px;
+        padding-top:16px;
         padding-bottom: 174px;
     }
     svg{
@@ -178,8 +179,8 @@ const Content = () =>{
                 <svg>
                     <rect id="box" x="0" y="0" width="40" height="4"/>
                 </svg>
-                <p>緣起於一個 Nobody 很喜歡這項運動，希望有更多 Nobody 也能一起來 Climb
-                    當然過程中一定會有一些疑惑，或許這裡能有一些解答或收穫
+                <p>緣起於一個 Nobody 很喜歡這項運動，希望有更多 Nobody 也能一起來 Climb 
+                    <br/>當然過程中一定會有一些疑惑，或許這裡能帶給你一些解答或收穫
                 </p>
             </ContAbout>
         </ContentWrapper>
