@@ -70,10 +70,10 @@ const Header = () =>{
             </HeaderRight>
             <HeaderLeft>
             <Nav>
-                <Link to="/Person">人物誌</Link>
-                <Link to="/ClimbSpot">岩場介紹</Link>
-                <Link to="/Photo">攝影集</Link>
-                <Link to="/Blog">專欄文章</Link>
+                <Link to="/person">人物誌</Link>
+                <Link to="/climbSpot">岩場介紹</Link>
+                <Link to="/photo">攝影集</Link>
+                <Link to="/blog">專欄文章</Link>
             </Nav>
             <SignIn>
                 <Button  variant="outlined" color='inherit' size="large">登入</Button>
