@@ -17,7 +17,7 @@ const ContIntro = styled.div`
     display: flex;
     flex-direction:column;
     align-items: center;
-    background:linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)),url(${imgintro}),round;
+    background:linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)),url(${imgintro});
     background-size:cover;
     color:#FFFFFF;
     h1{
@@ -57,7 +57,6 @@ const ContPerson = styled.div`
         color:#1B1A1A;
         border:#1B1A1A;
         border:1px solid  #1B1A1A ;
-
         }
     }
 `;

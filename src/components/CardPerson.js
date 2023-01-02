@@ -41,7 +41,7 @@ const PersonCard = () =>{
     return(
         <PersonCardWrapper>
             <PersonCardLeft>
-                <Card sx={{ maxWidth: 345 }}>
+                <Card sx={{ maxWidth: 360 }}>
                     <CardMedia
                     sx={{ height: 248 }}
                     image={PersonLeft}
@@ -66,7 +66,7 @@ const PersonCard = () =>{
                 </Card>
             </PersonCardLeft>
             <PersonCardMid>
-                <Card sx={{ maxWidth: 345 }}>
+                <Card sx={{ maxWidth: 360 }}>
                     <CardMedia
                     sx={{ height: 248 }}
                     image={PersonMid}
@@ -91,7 +91,7 @@ const PersonCard = () =>{
                 </Card>
             </PersonCardMid>
             <PersonCardRight>
-                <Card sx={{ maxWidth: 345 }}>
+                <Card sx={{ maxWidth: 360 }}>
                     <CardMedia
                     sx={{ height: 248 }}
                     image={PersonRight}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import Header from '../views/Header';
-import Footer from '../views/Footer';
+import Header from './Header';
+import Footer from './Footer';
 
 const PhotoWapper = styled.div`
   background: #F5F5F5;
