@@ -1,123 +1,113 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import PersonLeft from '../images/photo/personleft.jpg';
-import PersonMid from '../images/photo/personmid.jpg';
-import PersonRight from '../images/photo/personright.jpg';
-import { ReactComponent as ArrowRightCircle} from'../images/icon/arrow-right-circled.svg';
-
-
+import React from "react";
+import styled from "@emotion/styled";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import PersonLeft from "../images/photo/personleft.jpeg";
+import PersonMid from "../images/photo/personmid.jpeg";
+import PersonRight from "../images/photo/personright.jpeg";
+import { ReactComponent as ArrowRightCircle } from "../images/icon/arrow-right-circled.svg";
 
 const PersonCardWrapper = styled.div`
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 `;
-const PersonCardLeft = styled.div`
-
-`;
+const PersonCardLeft = styled.div``;
 const PersonCardMid = styled.div`
-    padding-right:20px;
-    padding-left: 20px;
-
+  padding-right: 20px;
+  padding-left: 20px;
 `;
-const PersonCardRight = styled.div`
+const PersonCardRight = styled.div``;
 
+const CardContentWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;
+const CardContentZone = styled.div``;
 
-const CardContentWrapper =styled.div`
-    display: flex;
-    justify-content: space-between;
-`
-const CardContentZone =styled.div`
-    
-`
-                
-const PersonCard = () =>{
-    return(
-        <PersonCardWrapper>
-            <PersonCardLeft>
-                <Card sx={{ maxWidth: 360 }}>
-                    <CardMedia
-                    sx={{ height: 248 }}
-                    image={PersonLeft}
-                    title="green iguana"
-                    />
-                    <CardContent>
-                        <CardContentWrapper>
-                            <CardContentZone>
-                                <Typography gutterBottom variant="h5" component="div">
-                                謝璿
-                                </Typography>
-                                <Typography variant="subtitle1" color="#8E8C8C">
-                                攀岩年資 | 3年
-                                </Typography>
-                            </CardContentZone>
-                            <ArrowRightCircle/>
-                        </CardContentWrapper>
-                        <Typography variant="body2" color="#1B1A1A">
-                        攀岩像是在牆上跳舞，像是在牆上即興演出，像是在走一條迷宮，起點終點很明確，過程自由發揮，你就是答案。
-                        </Typography>
-                    </CardContent>
-                </Card>
-            </PersonCardLeft>
-            <PersonCardMid>
-                <Card sx={{ maxWidth: 360 }}>
-                    <CardMedia
-                    sx={{ height: 248 }}
-                    image={PersonMid}
-                    title="green iguana"
-                    />
-                    <CardContent>
-                        <CardContentWrapper>
-                            <CardContentZone>
-                                <Typography gutterBottom variant="h5" component="div">
-                                奇瑋
-                                </Typography>
-                                <Typography variant="subtitle1" color="#8E8C8C">
-                                攀岩年資 | 3年
-                                </Typography>
-                            </CardContentZone>
-                            <ArrowRightCircle/>
-                        </CardContentWrapper>
-                        <Typography variant="body2" color="#1B1A1A">
-                        攀岩像是在牆上跳舞，像是在牆上即興演出，像是在走一條迷宮，起點終點很明確，過程自由發揮，你就是答案。
-                        </Typography>
-                    </CardContent>
-                </Card>
-            </PersonCardMid>
-            <PersonCardRight>
-                <Card sx={{ maxWidth: 360 }}>
-                    <CardMedia
-                    sx={{ height: 248 }}
-                    image={PersonRight}
-                    title="green iguana"
-                    />
-                    <CardContent>
-                        <CardContentWrapper>
-                            <CardContentZone>
-                                <Typography gutterBottom variant="h5" component="div">
-                                小若
-                                </Typography>
-                                <Typography variant="subtitle1" color="#8E8C8C">
-                                攀岩年資 | 3年
-                                </Typography>
-                            </CardContentZone>
-                            <ArrowRightCircle/>
-                        </CardContentWrapper>
-                        <Typography variant="body2" color="#1B1A1A">
-                        攀岩像是在牆上跳舞，像是在牆上即興演出，像是在走一條迷宮，起點終點很明確，過程自由發揮，你就是答案。
-                        </Typography>
-                    </CardContent>
-                </Card>
-            </PersonCardRight>
-            </PersonCardWrapper>
-
-    );
+const PersonCard = () => {
+  return (
+    <PersonCardWrapper>
+      <PersonCardLeft>
+        <Card sx={{ maxWidth: 360 }}>
+          <CardMedia
+            sx={{ height: 248 }}
+            image={PersonLeft}
+            title="green iguana"
+          />
+          <CardContent>
+            <CardContentWrapper>
+              <CardContentZone>
+                <Typography gutterBottom variant="h5" component="div">
+                  謝璿
+                </Typography>
+                <Typography variant="subtitle1" color="#8E8C8C">
+                  攀岩年資 | 3年
+                </Typography>
+              </CardContentZone>
+              <ArrowRightCircle />
+            </CardContentWrapper>
+            <Typography variant="body2" color="#1B1A1A">
+              攀岩像是在牆上跳舞，像是在牆上即興演出，像是在走一條迷宮，起點終點很明確，過程自由發揮，你就是答案。
+            </Typography>
+          </CardContent>
+        </Card>
+      </PersonCardLeft>
+      <PersonCardMid>
+        <Card sx={{ maxWidth: 360 }}>
+          <CardMedia
+            sx={{ height: 248 }}
+            image={PersonMid}
+            title="green iguana"
+          />
+          <CardContent>
+            <CardContentWrapper>
+              <CardContentZone>
+                <Typography gutterBottom variant="h5" component="div">
+                  奇瑋
+                </Typography>
+                <Typography variant="subtitle1" color="#8E8C8C">
+                  攀岩年資 | 3年
+                </Typography>
+              </CardContentZone>
+              <ArrowRightCircle />
+            </CardContentWrapper>
+            <Typography variant="body2" color="#1B1A1A">
+              攀岩像是在牆上跳舞，像是在牆上即興演出，像是在走一條迷宮，起點終點很明確，過程自由發揮，你就是答案。
+            </Typography>
+          </CardContent>
+        </Card>
+      </PersonCardMid>
+      <PersonCardRight>
+        <Card sx={{ maxWidth: 360 }}>
+          <CardMedia
+            sx={{ height: 248 }}
+            image={PersonRight}
+            title="green iguana"
+          />
+          <CardContent>
+            <CardContentWrapper>
+              <CardContentZone>
+                <Typography gutterBottom variant="h5" component="div">
+                  小若
+                </Typography>
+                <Typography variant="subtitle1" color="#8E8C8C">
+                  攀岩年資 | 3年
+                </Typography>
+              </CardContentZone>
+              <ArrowRightCircle />
+            </CardContentWrapper>
+            <Typography variant="body2" color="#1B1A1A">
+              攀岩像是在牆上跳舞，像是在牆上即興演出，像是在走一條迷宮，起點終點很明確，過程自由發揮，你就是答案。
+            </Typography>
+          </CardContent>
+        </Card>
+      </PersonCardRight>
+    </PersonCardWrapper>
+  );
 };
 
-export default PersonCard;              
+export default PersonCard;
