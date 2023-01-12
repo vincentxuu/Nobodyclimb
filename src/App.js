@@ -18,6 +18,7 @@ function App() {
         <Route path="/climbspot" element={<ClimbSpot />} />
         <Route path="/photoalbum" element={<PhotoAlbum />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );
