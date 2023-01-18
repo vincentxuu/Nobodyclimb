@@ -7,7 +7,7 @@ import CardBlogList from "../components/CardBlogList";
 import ToggleButtonCategory from "../components/ToggleButtonCategory";
 import Box from "@mui/material/Box";
 import Carousel from "../components/Carousel";
-import Text from "../components/Test";
+import Test from "../components/Test";
 
 const BlogWapper = styled.div`
   background: #f5f5f5;
@@ -29,15 +29,14 @@ function Blog() {
           paddingTop: "64px",
         }}
       >
-        <Text />
         <Box
           sx={{
             display: "flex",
             padding: "40px 0px 40px 0px",
           }}
         >
-          <ToggleButtonCategory  />
-          <Search  />
+          <ToggleButtonCategory />
+          <Search />
         </Box>
         <CardBlogList />
       </Box>

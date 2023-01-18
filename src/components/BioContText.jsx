@@ -18,7 +18,7 @@ import { ReactComponent as ArrowIconLeft } from "../images/icon/arrow-left.svg";
 import { ReactComponent as ArrowIconRight } from "../images/icon/arrow-right.svg";
 import PersonLeft from "../images/photo/personleft.jpg";
 import PersonPhotoDown from "../images/photo/person-poto.jpg";
-
+import TestBio from "../components/TestBio";
 const ContentPersonWrapper = styled.div`
   padding: 24px 64px 0px 64px;
   background-color: #ffffff;

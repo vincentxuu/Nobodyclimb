@@ -14,13 +14,24 @@ import { ReactComponent as ArrowRightCircle } from "../images/icon/arrow-right-c
 const PersonCardWrapper = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  @media (max-width: 767px) {
+    //width: 60%;
+  }
 `;
-const PersonCardLeft = styled.div``;
+const PersonCardLeft = styled.div`
+  padding: 10px 20px 10px 20px;
+
+`;
 const PersonCardMid = styled.div`
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 10px 20px 10px 20px;
+  @media (max-width: 767px) {
+    //padding:20px 0px 20px 0px ;
+  }
 `;
-const PersonCardRight = styled.div``;
+const PersonCardRight = styled.div`
+  padding: 10px 20px 10px 20px;
+`;
 
 const CardContentWrapper = styled.div`
   display: flex;

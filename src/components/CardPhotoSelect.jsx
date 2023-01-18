@@ -1,105 +1,112 @@
 import React from "react";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
 import styled from "@emotion/styled";
-import phototopleft from "../images/photo/cont-photo-top-left.jpeg";
-import phototopright from "../images/photo/cont-photo-top-right.jpeg";
-import photomidleft from "../images/photo/cont-photo-mid-left.jpeg";
-import photomidright from "../images/photo/cont-photo-mid-right.jpeg";
-import photobottomleft from "../images/photo/cont-photo-bottom-left.jpeg";
-import photobottomright from "../images/photo/cont-photo-bottom-right.jpeg";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
 
-const CardPhotoSelectWrapper = styled.div`
-  width: 1440px;
-`;
-
-const CardPhotoBig = styled.div`
-  img {
-    width: 740px;
-    height: 312px;
-    object-fit: cover;
+const StyleImageList = styled(ImageList)`
+  overflow-y: unset;
+  height: unset;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  @media (max-width: 767px) {
+    grid-template-columns: unset !important;
+    width: 100%;
   }
 `;
-const CardPhotoSmall = styled.div`
-  width: 368px;
-  height: 312px;
-`;
 
-const CardPhotoSelect = () => {
+function srcset(image, size, rows = 1, cols = 1) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
+
+export default function QuiltedImageList() {
   return (
-    <CardPhotoSelectWrapper>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={6} md={8}>
-            <div className="grid-elements">
-              <CardPhotoBig>
-                <img
-                  style={{ width: "100%" }}
-                  src={phototopleft}
-                  alt="Background"
-                />
-              </CardPhotoBig>
-            </div>
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <div className="grid-elements">
-              <CardPhotoSmall>
-                <img
-                  style={{ height: "100%" }}
-                  src={phototopright}
-                  alt="Background"
-                />
-              </CardPhotoSmall>
-            </div>
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <div className="grid-elements">
-              <CardPhotoSmall>
-                <img
-                  style={{ height: "100%" }}
-                  src={photomidleft}
-                  alt="Background"
-                />
-              </CardPhotoSmall>
-            </div>
-          </Grid>
-          <Grid item xs={6} md={8}>
-            <div className="grid-elements">
-              <CardPhotoBig>
-                <img
-                  style={{ width: "100%" }}
-                  src={photomidright}
-                  alt="Background"
-                />
-              </CardPhotoBig>
-            </div>
-          </Grid>
-          <Grid item xs={6} md={8}>
-            <div className="grid-elements">
-              <CardPhotoBig>
-                <img
-                  style={{ width: "100%" }}
-                  src={photobottomleft}
-                  alt="Background"
-                />
-              </CardPhotoBig>
-            </div>
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <div className="grid-elements">
-              <CardPhotoSmall>
-                <img
-                  style={{ height: "100%" }}
-                  src={photobottomright}
-                  alt="Background"
-                />
-              </CardPhotoSmall>
-            </div>
-          </Grid>
-        </Grid>
-      </Box>
-    </CardPhotoSelectWrapper>
+    <StyleImageList
+      sx={{ width: 800, height: 800 }}
+      variant="quilted"
+      cols={4}
+      rowHeight={121}
+    >
+      {itemData.map((item) => (
+        <ImageListItem
+          key={item.img}
+          cols={item.cols || 1}
+          rows={item.rows || 1}
+        >
+          <img
+            {...srcset(item.img, 121, item.rows, item.cols)}
+            alt={item.title}
+            loading="lazy"
+          />
+        </ImageListItem>
+      ))}
+    </StyleImageList>
   );
-};
+}
 
-export default CardPhotoSelect;
+const itemData = [
+  {
+    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    title: "Breakfast",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
+    title: "Burger",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
+    title: "Camera",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
+    title: "Coffee",
+    cols: 2,
+  },
+  {
+    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
+    title: "Hats",
+    cols: 2,
+  },
+  {
+    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
+    title: "Honey",
+    author: "@arwinneil",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
+    title: "Basketball",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
+    title: "Fern",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
+    title: "Mushrooms",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
+    title: "Tomato basil",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
+    title: "Sea star",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
+    title: "Bike",
+    cols: 2,
+  },
+];

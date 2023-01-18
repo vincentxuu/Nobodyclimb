@@ -9,6 +9,7 @@ import { CenterFocusStrong } from "@mui/icons-material";
 
 const PhotoWapper = styled.div`
   background: #f5f5f5;
+
   h1 {
     font-family: "Noto Sans TC";
     font-style: normal;
@@ -16,7 +17,10 @@ const PhotoWapper = styled.div`
     font-size: 40px;
     line-height: 150%;
     color: #1b1a1a;
-    padding:40px 0px 8px 0px;
+    padding: 40px 0px 8px 0px;
+    @media (max-width: 767px) {
+      margin-left: 15px;
+    }
   }
   p {
     font-family: "Noto Sans CJK TC";
@@ -25,7 +29,13 @@ const PhotoWapper = styled.div`
     font-size: 16px;
     line-height: 150%;
     color: #6d6c6c;
-    padding-bottom:24px;
+    padding-bottom: 24px;
+    @media (max-width: 767px) {
+      margin-left: 15px;
+    }
+    ul{
+      column-count:unset;
+    }
   }
 `;
 

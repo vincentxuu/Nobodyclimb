@@ -14,8 +14,14 @@ import BlogRight from "../images/photo/blog-right.jpeg";
 const CardBlogWrapper = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 64px;
+  @media (max-width: 767px) {
+    img{
+      width: 50%;
+    }
+  }
 `;
 const CardBlogLeft = styled.div`
   width: 265px;
@@ -27,6 +33,7 @@ const CardBlogLeft = styled.div`
   border-radius: 8px;
   color: #ffff;
   text-align: center;
+  margin: 10px 10px 10px 10px;
   h2 {
     font-family: "Noto Sans CJK TC";
     font-style: normal;
@@ -48,8 +55,7 @@ const CardBlogMidLeft = styled.div`
   border-radius: 8px;
   color: #ffff;
   text-align: center;
-  margin-left: 20px;
-  margin-right: 10px;
+  margin: 10px 10px 10px 10px;
   h2 {
     font-family: "Noto Sans CJK TC";
     font-style: normal;
@@ -71,8 +77,7 @@ const CardBlogMidRight = styled.div`
   border-radius: 8px;
   color: #ffff;
   text-align: center;
-  margin-left: 10px;
-  margin-right: 20px;
+  margin: 10px 10px 10px 10px;
   h2 {
     font-family: "Noto Sans CJK TC";
     font-style: normal;
@@ -94,6 +99,7 @@ const CardBlogRight = styled.div`
   border-radius: 8px;
   color: #ffff;
   text-align: center;
+  margin: 10px 10px 10px 10px;
   h2 {
     font-family: "Noto Sans CJK TC";
     font-style: normal;

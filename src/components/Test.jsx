@@ -1,7 +1,17 @@
 import React, { useState, useCallback } from "react";
 import styled from "styled-components";
 import Carousel from "react-grid-carousel";
-import newsList from "../components/mockNewsList.json";
+
+import {
+  Box,
+  Card,
+  Typography,
+  Stack,
+  Avatar,
+  AvatarGroup,
+  Button,
+} from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
 
 const Container = styled.div`
   top: 0;
@@ -52,8 +62,8 @@ const Title = styled.div`
 const Type = styled.div`
   background-color: black;
   width: 81px;
-  height:25px;
-  font-family: 'Noto Sans CJK TC';
+  height: 25px;
+  font-family: "Noto Sans CJK TC";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -67,27 +77,82 @@ const Time = styled.div`
   font-weight: bold;
   color: #fff;
   text-align: center;
-
 `;
+
+const Members = [
+  {
+    id: 0,
+    name: "Tiff",
+    image: "https://cataas.com/cat/0",
+  },
+  {
+    id: 1,
+    name: "小許",
+    image: "https://cataas.com/cat/1",
+  },
+  {
+    id: 2,
+    name: "小貝",
+    image: "https://cataas.com/cat/2",
+  },
+  {
+    id: 3,
+    name: "葦",
+    image: "https://cataas.com/cat/3",
+  },
+  {
+    id: 4,
+    name: "羊",
+    image: "https://cataas.com/cat/4",
+  },
+  {
+    id: 5,
+    name: "Sucre",
+    image: "https://cataas.com/cat/5",
+  },
+  {
+    id: 6,
+    name: "東玉",
+    image: "https://cataas.com/cat/6",
+  },
+  {
+    id: 7,
+    name: "百戰不殆",
+    image: "https://cataas.com/cat/7",
+  },
+  {
+    id: 8,
+    name: "Yvonne",
+    image: "https://cataas.com/cat/8",
+  },
+  {
+    id: 9,
+    name: "珮珮",
+    image: "https://cataas.com/cat/9",
+  },
+  {
+    id: 10,
+    name: "袋鼠",
+    image: "https://cataas.com/cat/10",
+  },
+  {
+    id: 11,
+    name: "Karen",
+    image: "https://cataas.com/cat/11",
+  },
+  {
+    id: 12,
+    name: "預知",
+    image: "https://cataas.com/cat/12",
+  }
+];
 
 const App = () => {
   return (
     <Container>
-      <Carousel>
-        {newsList.map(({ imageSrc, title, type}, i) => (
-          <Carousel.Item key={i}>
-            <Item img={imageSrc}>
-              <Index>
-                {i + 1}/{newsList.length}
-              </Index>
-              <Detail>
-                <Type>{type}</Type>
-                <Title>{title}</Title>
-              </Detail>
-            </Item>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      {Members.map(({ id, name }) => (
+        <Box >{name}</Box>
+      ))}
     </Container>
   );
 };

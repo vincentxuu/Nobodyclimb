@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import styled from "styled-components";
-import biographyList from "../components/biograohyList.json";
+import BiographyList from "../components/BiograohyList.json";
 import Box from "@mui/material/Box";
 
 const Container = styled.div`
@@ -43,7 +43,6 @@ const Title = styled.div`
   font-weight: bold;
 `;
 const Type = styled.div`
-  background-color: black;
   width: 81px;
   height: 25px;
   font-family: "Noto Sans CJK TC";
@@ -59,14 +58,11 @@ const App = () => {
   return (
     <Container>
       <Box>
-        {biographyList.map(({ imageSrc, title, type },i) => (
-          <Box.Item key={i}>
-            <Item img={imageSrc}></Item>
+        {BiographyList.map(({name,time,}) => (
             <Detail>
-              <Type>{type}</Type>
-              <Title>{title}</Title>
+              <Type>{name}</Type>
+              <Title>{time}</Title>
             </Detail>
-          </Box.Item>
         ))}
       </Box>
     </Container>

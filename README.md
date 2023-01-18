@@ -1,10 +1,29 @@
-# Getting Started with Create React App
+# NobodyClimb攀岩網站
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NobodyClimb使用 React的開發套件與設計風格，詳細列在下面。
 
-## Available Scripts
+## 開發技術
 
-In the project directory, you can run:
+<p float="left" margin="10px">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png" height="100px"> 
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" height="100px"> 
+  <img src="https://redux-saga.js.org/img/Redux-Saga-Logo.png" height="100px"> 
+  <img src="https://mui.com/static/logo.png" height="100px"> 
+  <img src="https://raw.githubusercontent.com/emotion-js/emotion/main/emotion.png" height="100px"> 
+  <img src="https://i.imgur.com/A2XaNqc.png" height="100px"> 
+</p>
+
+
+
+## 主要技術列表
+
+前端版本：React 18
+前端框架：Next.js  
+狀態管理：Redux（Redux-saga）
+Design System：mui（Material UI）
+CSS-in-JS：[emotion](https://emotion.sh/docs/introduction)  
+coding-style：[airbnb-eslint](https://github.com/airbnb/javascript)  
+
 
 ### `npm start`
 

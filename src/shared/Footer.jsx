@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import Box from "@mui/material/Box";
 import { ReactComponent as LogoIconWhite } from "../images/logo/Nobodylimb-white.svg";
 import { ReactComponent as IconFacebook } from "../images/icon/icon-facebook.svg";
 import { ReactComponent as IconInstagram } from "../images/icon/icon-instagram.svg";
@@ -7,10 +8,14 @@ import { ReactComponent as IconMail } from "../images/icon/icon-mail.svg";
 
 const FooterWapper = styled.div`
   height: 160px;
-  background: #1b1a1a;
+  background: rgb(27, 26, 26);
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
+  padding: 0px 160px 0px 160px;
+  @media (max-width: 767px) {
+    padding: 0px 20px 0px 20px;
+  }
   p {
     color: #8e8c8c;
     font-family: "Noto Sans CJK TC";
@@ -18,18 +23,24 @@ const FooterWapper = styled.div`
     font-weight: 350;
     font-size: 14px;
     line-height: 150%;
+    padding: 0px 30px 0px 30px;
   }
-  svg {
-    padding: 60px 0px 60px 166px;
+  @media (max-width: 767px) {
+    svg {
+      //padding: 60px 20px 60px 20px;
+    }
   }
 `;
 const FooterIcon = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 160px;
-  margin-left: 65px;
-
+  //margin-right: 160px;
+  //margin-left: 65px;
+  @media (max-width: 767px) {
+    //margin-right: 20px;
+    margin-left: 10px;
+  }
   svg {
     height: 30px;
     width: 30px;
@@ -37,14 +48,27 @@ const FooterIcon = styled.div`
     border-radius: 31px;
     padding: 5px;
     margin: 3px;
+    @media (max-width: 767px) {
+      max-width: 20px;
+      max-height: 20px;
+    }
   }
 `;
 
 const Footer = () => {
   return (
     <FooterWapper>
-      <LogoIconWhite />
-      <p>NobodyClimb © 2022.</p>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        <LogoIconWhite />
+        <p>NobodyClimb © 2022.</p>
+      </Box>
       <FooterIcon>
         <IconFacebook />
         <IconInstagram />

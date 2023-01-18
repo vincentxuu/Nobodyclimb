@@ -9,7 +9,15 @@ import CardBlog from "./CardBlog";
 import CardPhotoSelect from "./CardPhotoSelect";
 import { Link } from "react-router-dom";
 
-const ContentWrapper = styled.div``;
+const ContentWrapper = styled.div`
+  @media (max-width: 767px) {
+    width: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+`;
 const ContIntro = styled.div`
   display: flex;
   flex-direction: column;
@@ -31,7 +39,7 @@ const ContIntro = styled.div`
     padding-top: 128px;
   }
   p {
-    width: 503px;
+    max-width: 503px;
     font-family: "Noto Sans CJK TC";
     font-style: normal;
     font-weight: 400;
@@ -40,6 +48,9 @@ const ContIntro = styled.div`
     text-align: center;
     padding-top: 44px;
     padding-bottom: 195px;
+    @media (max-width: 767px) {
+      width: 300px;
+    }
   }
 `;
 const ContPerson = styled.div`
@@ -143,9 +154,12 @@ const ContAbout = styled.div`
     font-size: 16px;
     line-height: 150%;
     text-align: center;
-    width: 582px;
+    max-width: 582px;
     padding-top: 16px;
     padding-bottom: 174px;
+    @media (max-width: 767px) {
+      width: 300px;
+    }
   }
   svg {
     width: 40px;

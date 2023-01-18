@@ -13,10 +13,6 @@ import ToggleButtonType from "../components/ToogleButtonType";
 const ClimbSpotWrapper = styled.div`
   background: #f5f5f5;
 `;
-const SearchWrapper = styled.div`
-  padding: 40px 0px 30px 160px;
-`;
-
 const Cover = styled.div`
   background-image: url(${CoverPhoto});
   background-color: rgba(0, 0, 0, 0.3);
@@ -45,23 +41,6 @@ const Cover = styled.div`
     padding-left: 160px;
   }
 `;
-const PersonCardWrapper = styled.div`
-  display: flex;
-  padding: 0px 160px 0px 160px;
-`;
-
-const PersonCardLeft = styled.div``;
-const PersonCardMid = styled.div`
-  padding-right: 20px;
-  padding-left: 20px;
-`;
-const PersonCardRight = styled.div``;
-
-const CardContentWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-const CardContentZone = styled.div``;
 const StyleButton = styled.div`
   text-align: center;
   button {
@@ -109,6 +88,7 @@ function ClimbSpot() {
               sx={{
                 display: "flex",
                 flexDirection: "column",
+                flexWrap:"wrap",
                 mt: "32px",
               }}
             >

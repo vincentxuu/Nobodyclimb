@@ -6,6 +6,13 @@ import Footer from "../shared/Footer";
 
 const HomeWapper = styled.div`
   background: #f5f5f5;
+  @media (max-width: 767px) {
+    width: 100%;
+    img{
+      max-width: 100%;
+      height:auto;
+    }
+  }
 `;
 
 const Home = () => {

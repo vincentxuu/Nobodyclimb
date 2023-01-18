@@ -24,7 +24,13 @@ import TestBio from "../components/TestBio";
 
 const PersonWrapper = styled.div`
   background: #f5f5f5;
-
+  @media (max-width: 767px) {
+    width: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 `;
 const SearchWrapper = styled.div`
   padding: 40px 0px 30px 160px;
@@ -60,13 +66,14 @@ const Cover = styled.div`
 `;
 const PersonCardWrapper = styled.div`
   display: flex;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const PersonCardLeft = styled.div``;
-const PersonCardMid = styled.div`
-  padding-right: 20px;
-  padding-left: 20px;
-`;
+const PersonCardMid = styled.div``;
 const PersonCardRight = styled.div``;
 
 const CardContentWrapper = styled.div`
@@ -92,7 +99,7 @@ const StyleButton = styled.div`
 
 function Person() {
   //const [currentPerson,setCruuentPerson]= useState({
-    //name:{
+  //name:{
   //});//
   return (
     <PersonWrapper>
@@ -115,8 +122,8 @@ function Person() {
         >
           <Box
             sx={{
-              mt: "40px",
-              mb: "30px",
+              m: 2,
+              mt: 4
             }}
           >
             <Search />
@@ -124,7 +131,7 @@ function Person() {
           <PersonCardWrapper>
             <PersonCardLeft>
               <Link to="/biography/content" style={{ textDecoration: "none" }}>
-                <Card sx={{ maxWidth: 360 }}>
+                <Card sx={{ maxWidth: 360, m: 2 }}>
                   <CardMedia
                     sx={{ height: 248 }}
                     image={PersonLeft}
@@ -150,7 +157,7 @@ function Person() {
               </Link>
             </PersonCardLeft>
             <PersonCardMid>
-              <Card sx={{ maxWidth: 360 }}>
+              <Card sx={{ maxWidth: 360, m: 2 }}>
                 <CardMedia
                   sx={{ height: 248 }}
                   image={PersonMid}
@@ -175,7 +182,7 @@ function Person() {
               </Card>
             </PersonCardMid>
             <PersonCardRight>
-              <Card sx={{ maxWidth: 360 }}>
+              <Card sx={{ maxWidth: 360, m: 2 }}>
                 <CardMedia
                   sx={{ height: 248 }}
                   image={PersonRight}

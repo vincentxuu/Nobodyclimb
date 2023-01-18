@@ -10,27 +10,36 @@ import styled from "@emotion/styled";
 const StyledImageList = styled(ImageList)`
   overflow-y: unset;
   height: unset;
+  @media (max-width: 767px) {
+    grid-template-columns: unset !important;
+  }
 `;
 
 export default function TitlebarImageList() {
   return (
-    <StyledImageList sx={{ width: 1120, height: 336 }} cols={3}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-            />
-            <ImageListItemBar
-              title={item.title}
-              subtitle={<span>by: {item.author}</span>}
-              position="below"
-            />
-          </ImageListItem>
-        ))}
-      </StyledImageList>
+    <StyledImageList
+      sx={{
+        maxWidth: 1120,
+        height: 336,
+      }}
+      cols={3}
+    >
+      {itemData.map((item) => (
+        <ImageListItem key={item.img}>
+          <img
+            src={`${item.img}?w=248&fit=crop&auto=format`}
+            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            alt={item.title}
+            loading="lazy"
+          />
+          <ImageListItemBar
+            title={item.title}
+            subtitle={<span>by: {item.author}</span>}
+            position="below"
+          />
+        </ImageListItem>
+      ))}
+    </StyledImageList>
   );
 }
 
