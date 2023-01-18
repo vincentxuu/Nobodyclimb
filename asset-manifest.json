@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nobodyclimb/static/css/main.90f6920e.css",
-    "main.js": "/Nobodyclimb/static/js/main.9ab5c924.js",
+    "main.js": "/Nobodyclimb/static/js/main.d78fb950.js",
     "static/js/787.af26e8d7.chunk.js": "/Nobodyclimb/static/js/787.af26e8d7.chunk.js",
     "static/media/person-poto.jpg": "/Nobodyclimb/static/media/person-poto.7c3f2039efa5a43a1a7a.jpg",
     "static/media/climbspot-photo.jpeg": "/Nobodyclimb/static/media/climbspot-photo.a25c71cadda7136c9f1f.jpeg",
@@ -11,16 +11,10 @@
     "static/media/cont-intro.jpeg": "/Nobodyclimb/static/media/cont-intro.0dca9cdf1058193e0054.jpeg",
     "static/media/personleft.jpg": "/Nobodyclimb/static/media/personleft.9bc9b31cbe3ce5705dc9.jpg",
     "static/media/cover-photo.jpeg": "/Nobodyclimb/static/media/cover-photo.b899702353006687bc48.jpeg",
-    "static/media/cont-photo-top-left.jpeg": "/Nobodyclimb/static/media/cont-photo-top-left.aa72004d48a4e4759d5c.jpeg",
-    "static/media/cont-photo-mid-left.jpeg": "/Nobodyclimb/static/media/cont-photo-mid-left.07c879d8c6cc7c59b0cb.jpeg",
     "static/media/personright.jpeg": "/Nobodyclimb/static/media/personright.3267ec815934ec02f8ef.jpeg",
-    "static/media/cont-photo-top-right.jpeg": "/Nobodyclimb/static/media/cont-photo-top-right.a8076fa8edd370034515.jpeg",
-    "static/media/cont-photo-mid-right.jpeg": "/Nobodyclimb/static/media/cont-photo-mid-right.78e04a629f769d4b8773.jpeg",
     "static/media/blog-mid-left.jpeg": "/Nobodyclimb/static/media/blog-mid-left.430843f98348df0d2a5e.jpeg",
     "static/media/personmid.jpeg": "/Nobodyclimb/static/media/personmid.1f05f496e17ea1ebfd37.jpeg",
-    "static/media/cont-photo-bottom-right.jpeg": "/Nobodyclimb/static/media/cont-photo-bottom-right.20ed0fe78115fac8fb7d.jpeg",
     "static/media/cont-about.jpeg": "/Nobodyclimb/static/media/cont-about.7970b32bc933240864ba.jpeg",
-    "static/media/cont-photo-bottom-left.jpeg": "/Nobodyclimb/static/media/cont-photo-bottom-left.7ac7fa9f98e5f483d99c.jpeg",
     "static/media/personleft.jpeg": "/Nobodyclimb/static/media/personleft.4a298fc86fa4667091cf.jpeg",
     "static/media/Nobodylimb-black.svg": "/Nobodyclimb/static/media/Nobodylimb-black.e87159d12586132e6c693157cf853a63.svg",
     "static/media/Nobodylimb-white.svg": "/Nobodyclimb/static/media/Nobodylimb-white.edca67ad1a1f1e5944eb50c051636309.svg",
@@ -34,11 +28,11 @@
     "static/media/arrow-right.svg": "/Nobodyclimb/static/media/arrow-right.ae9f2fcc55bbf84eb2d110c0975ee698.svg",
     "static/media/arrow-left.svg": "/Nobodyclimb/static/media/arrow-left.dedfa2ffe552a92179851f07a40161c8.svg",
     "main.90f6920e.css.map": "/Nobodyclimb/static/css/main.90f6920e.css.map",
-    "main.9ab5c924.js.map": "/Nobodyclimb/static/js/main.9ab5c924.js.map",
+    "main.d78fb950.js.map": "/Nobodyclimb/static/js/main.d78fb950.js.map",
     "787.af26e8d7.chunk.js.map": "/Nobodyclimb/static/js/787.af26e8d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90f6920e.css",
-    "static/js/main.9ab5c924.js"
+    "static/js/main.d78fb950.js"
   ]
 }
