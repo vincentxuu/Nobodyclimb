@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nobodyclimb/static/css/main.90f6920e.css",
-    "main.js": "/Nobodyclimb/static/js/main.d78fb950.js",
+    "main.js": "/Nobodyclimb/static/js/main.76c749de.js",
     "static/js/787.af26e8d7.chunk.js": "/Nobodyclimb/static/js/787.af26e8d7.chunk.js",
     "static/media/person-poto.jpg": "/Nobodyclimb/static/media/person-poto.7c3f2039efa5a43a1a7a.jpg",
     "static/media/climbspot-photo.jpeg": "/Nobodyclimb/static/media/climbspot-photo.a25c71cadda7136c9f1f.jpeg",
@@ -28,11 +28,11 @@
     "static/media/arrow-right.svg": "/Nobodyclimb/static/media/arrow-right.ae9f2fcc55bbf84eb2d110c0975ee698.svg",
     "static/media/arrow-left.svg": "/Nobodyclimb/static/media/arrow-left.dedfa2ffe552a92179851f07a40161c8.svg",
     "main.90f6920e.css.map": "/Nobodyclimb/static/css/main.90f6920e.css.map",
-    "main.d78fb950.js.map": "/Nobodyclimb/static/js/main.d78fb950.js.map",
+    "main.76c749de.js.map": "/Nobodyclimb/static/js/main.76c749de.js.map",
     "787.af26e8d7.chunk.js.map": "/Nobodyclimb/static/js/787.af26e8d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90f6920e.css",
-    "static/js/main.d78fb950.js"
+    "static/js/main.76c749de.js"
   ]
 }
