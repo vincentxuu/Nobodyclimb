@@ -16,7 +16,6 @@ const CardBlogWrapper = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 40px;
-  padding-bottom: 64px;
   @media (max-width: 767px) {
     img{
       width: 50%;

@@ -6,8 +6,9 @@ import imgabout from "../images/photo/cont-about.jpeg";
 import Button from "@mui/material/Button";
 import PersonCard from "./CardPerson";
 import CardBlog from "./CardBlog";
-import CardPhotoSelect from "./CardPhotoSelect";
+import PhotoAlbumList from "./PhotoAlbumList";
 import { Link } from "react-router-dom";
+import { PhotoAlbum } from "@mui/icons-material";
 
 const ContentWrapper = styled.div`
   @media (max-width: 767px) {
@@ -74,6 +75,8 @@ const ContPerson = styled.div`
 const ContBlog = styled.div`
   border-top: 1px solid #d2d2d2;
   text-align: center;
+  padding:5%;
+
   h1 {
     font-family: "Glow Sans TC";
     font-style: normal;
@@ -97,6 +100,7 @@ const ContPhoto = styled.div`
   align-items: center;
   border-top: 1px solid #d2d2d2;
   text-align: center;
+  padding:5%;
   h1 {
     font-family: "Glow Sans TC";
     font-style: normal;
@@ -124,6 +128,9 @@ const ContPhoto = styled.div`
       border: #1b1a1a;
       border: 1px solid #1b1a1a;
     }
+  }
+  @media (max-width: 767px) {
+    margin: 5%;
   }
 `;
 const ContAbout = styled.div`
@@ -193,7 +200,7 @@ const Content = () => {
       <ContPhoto>
         <h1>精選影像</h1>
         <p>看看小人物們攀岩的英姿吧</p>
-        <CardPhotoSelect />
+        <PhotoAlbumList />
         <Link to="/photoalbum" style={{ textDecoration: "none" }}>
           <Button variant="outlined" size="large">
             看更多影像

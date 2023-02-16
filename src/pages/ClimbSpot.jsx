@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import Header from "../shared/Header";
+import Navigation from "../shared/Navigation";
 import Footer from "../shared/Footer";
 import Search from "../components/Search";
 import Button from "@mui/material/Button";
@@ -10,6 +10,7 @@ import ClimbSpotList from "../components/ClimbSpotList";
 import { Box } from "@mui/system";
 import ToggleButtonArea from "../components/ToogleButtonArea";
 import ToggleButtonType from "../components/ToogleButtonType";
+
 const ClimbSpotWrapper = styled.div`
   background: #f5f5f5;
 `;
@@ -18,8 +19,9 @@ const Cover = styled.div`
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
   background-size: cover;
+  height:520px;
   color: #ffff;
-
+  position: relative;
   h1 {
     font-family: "Noto Sans TC";
     font-style: normal;
@@ -27,7 +29,9 @@ const Cover = styled.div`
     font-size: 40px;
     line-height: 150%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 332px 0px 8px 160px;
+    position: absolute;
+    top:70%;
+    left:8%;
   }
   p {
     font-family: "Noto Sans TC";
@@ -36,9 +40,9 @@ const Cover = styled.div`
     font-size: 16px;
     line-height: 150%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 8px;
-    padding-bottom: 72px;
-    padding-left: 160px;
+    position: absolute;
+    top:82%;
+    left:8%;
   }
 `;
 const StyleButton = styled.div`
@@ -60,7 +64,7 @@ const StyleButton = styled.div`
 function ClimbSpot() {
   return (
     <ClimbSpotWrapper>
-      <Header />
+      <Navigation />
       <Cover>
         <h1>岩場介紹</h1>
         <p>探索台灣各式各樣有趣的岩場</p>

@@ -1,6 +1,6 @@
 # NobodyClimb攀岩網站
 
-NobodyClimb使用 React的開發套件與設計風格，詳細列在下面。
+NobodyClimb使用 React開發套件與設計風格，詳細列在下面。
 
 ## 開發技術
 
@@ -18,8 +18,6 @@ NobodyClimb使用 React的開發套件與設計風格，詳細列在下面。
 ## 主要技術列表
 
 前端版本：React 18
-前端框架：Next.js  
-狀態管理：Redux（Redux-saga）
 Design System：mui（Material UI）
 CSS-in-JS：[emotion](https://emotion.sh/docs/introduction)  
 coding-style：[airbnb-eslint](https://github.com/airbnb/javascript)  

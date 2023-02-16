@@ -6,10 +6,6 @@ import styled from "@emotion/styled";
 const StyleImageList = styled(ImageList)`
   overflow-y: unset;
   height: unset;
-    img {
-      max-width: 100%;
-      height: auto;
-    }
   @media (max-width: 767px) {
     grid-template-columns: unset !important;
     width: 100%;
@@ -52,60 +48,60 @@ export default function QuiltedImageList() {
 
 const itemData = [
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    img: "https://i.imgur.com/LyfwLGy.jpg",
     title: "Breakfast",
     rows: 2,
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
+    img: "https://i.imgur.com/jYA7WJP.jpg",
     title: "Burger",
   },
   {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
+    img: "https://i.imgur.com/AgQpro0.jpg",
     title: "Camera",
   },
   {
-    img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
+    img: "https://i.imgur.com/pmhwVbf.jpg",
     title: "Coffee",
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
+    img: "https://i.imgur.com/GC6VD5A.jpg",
     title: "Hats",
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
+    img: "https://i.imgur.com/K25stCr.jpg",
     title: "Honey",
     author: "@arwinneil",
     rows: 2,
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
+    img: "https://i.imgur.com/YrVFXHg.jpg",
     title: "Basketball",
   },
   {
-    img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
+    img: "https://i.imgur.com/BSidoFY.jpg",
     title: "Fern",
   },
   {
-    img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
+    img: "https://i.imgur.com/AwJ83FD.jpg",
     title: "Mushrooms",
     rows: 2,
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
+    img: "https://i.imgur.com/3ovqKED.jpg",
     title: "Tomato basil",
   },
   {
-    img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
+    img: "https://i.imgur.com/KtEugIY.jpg",
     title: "Sea star",
   },
   {
-    img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
+    img: "https://i.imgur.com/sHnwfGV.jpg",
     title: "Bike",
     cols: 2,
   },

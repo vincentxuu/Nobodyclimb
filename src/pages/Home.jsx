@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import Header from "../shared/Header";
+import Navigation from "../shared/Navigation";
 import Content from "../components/Content";
 import Footer from "../shared/Footer";
 
@@ -18,7 +18,7 @@ const HomeWapper = styled.div`
 const Home = () => {
   return (
     <HomeWapper>
-      <Header />
+      <Navigation />
       <Content />
       <Footer />
     </HomeWapper>

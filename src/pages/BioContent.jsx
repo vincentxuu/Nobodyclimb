@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import Header from "../shared/Header";
+import Navigation from "../shared/Navigation";
 import Footer from "../shared/Footer";
 import CardPerson from "../components/CardPerson";
 import BioContText from "../components/BioContText";
@@ -82,7 +82,7 @@ const ContentBottom = styled.div`
 function Person() {
   return (
     <PersonWrapper>
-      <Header />
+      <Navigation />
       <BackIcon>
         <Link to="/biography" style={{ textDecoration: "none" }}>
           <button>

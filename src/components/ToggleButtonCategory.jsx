@@ -4,6 +4,7 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
+
 const StyleToggleButton = styled(ToggleButton)`
   background-color: "#FFFFFF";
   border-radius: "8px";
@@ -21,12 +22,12 @@ const StyleToggleButton = styled(ToggleButton)`
 `;
 
 export default function ToggleButtonsMultiple() {
-  const [formats, setFormats] = React.useState(() => ["bold", "italic"]);
+  const [formats, setFormats] = React.useState(() => []);
 
   const handleFormat = (event, newFormats) => {
     setFormats(newFormats);
   };
-
+// ["all", "skill"]
   return (
     <Box
       sx={{

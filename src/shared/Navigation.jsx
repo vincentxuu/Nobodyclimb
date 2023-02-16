@@ -7,6 +7,10 @@ import InputBase from "@mui/material/InputBase";
 import { ReactComponent as LogoIcon } from "../images/logo/Nobodylimb-black.svg";
 import { ReactComponent as SearchIcon } from "../images/icon/icon_search.svg";
 import { Link } from "react-router-dom";
+import NavMenu from "../components/NavMenu";
+import MenuIcon from '@mui/icons-material/Menu';
+import { border, Box } from "@mui/system";
+
 
 const HeaderWrapper = styled.div`
   height: 83px;
@@ -16,7 +20,7 @@ const HeaderWrapper = styled.div`
   @media (max-width: 767px) {
     background-color: #ffe70c;
     flex-direction: column;
-    height: 146px;
+    height: auto;
     width: 100%;
     img {
       max-width: 100%;
@@ -31,6 +35,7 @@ const HeaderRight = styled.div`
 
   @media (max-width: 767px) {
     background-color: #ffffff;
+    display: none;
   }
 `;
 const HeaderLeft = styled.div`
@@ -50,25 +55,30 @@ const Search = styled.div`
   @media (max-width: 767px) {
     background-color: #ffe70c;
     padding: 20px 32px;
+    display: none;
     form {
       background-color: #ffe70c;
     }
   }
 `;
 const Nav = styled.div`
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
   padding: 28px 80px 28px 32px;
-  ul{
-    display:flex;
+  button {
+    color: black;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  ul {
+    display: flex;
     flex-wrap: wrap;
- 
+  }
+  li {
+    margin: 10px;
   }
   a {
-    margin: 24px;
     text-decoration: none;
     color: black;
   }
@@ -78,9 +88,6 @@ const Nav = styled.div`
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    a {
-    margin: 14px;
-  }
   }
 `;
 const SignIn = styled.div`
@@ -114,14 +121,37 @@ const Header = () => {
             <InputBase sx={{ ml: 2, flex: 1 }} />
           </Paper>
         </Search>
+        <Box
+        sx={{
+          display:'none',
+          '@media (max-width: 767px)':{
+            display:'contents',
+            } 
+          }} >
+        <MenuIcon />
+        </Box>
       </HeaderLeft>
       <HeaderRight>
         <Nav>
           <ul>
-            <li><Link to="/biography">人物誌</Link></li>
-            <li><Link to="/climbSpot">岩場介紹</Link></li>
-            <li><Link to="/photoalbum">攝影集</Link></li>
-            <li><Link to="/blog">專欄文章</Link></li>
+            <li>
+              <Link to="/biography">
+                <Button variant="text">人物誌</Button>
+              </Link>
+            </li>
+            <li>
+              <Link to="/climbSpot">
+                <Button variant="text">岩場介紹</Button>
+              </Link>
+            </li>
+            <li>
+              <Link to="/photoalbum">
+                <Button variant="text">攝影集</Button>
+              </Link>
+            </li>
+            <li>
+              <NavMenu />
+            </li>
           </ul>
         </Nav>
         {/*<SignIn>

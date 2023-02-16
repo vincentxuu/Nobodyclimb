@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import Header from "../shared/Header";
+import Navigation from "../shared/Navigation";
 import Footer from "../shared/Footer";
 import Search from "../components/Search";
 import Card from "@mui/material/Card";
@@ -42,7 +42,8 @@ const Cover = styled.div`
   background-blend-mode: multiply;
   background-size: cover;
   color: #ffff;
-
+  height:520px;
+  position: relative;
   h1 {
     font-family: "Noto Sans TC";
     font-style: normal;
@@ -50,7 +51,9 @@ const Cover = styled.div`
     font-size: 40px;
     line-height: 150%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 332px 0px 8px 160px;
+    position: absolute;
+    top:70%;
+    left:8%;
   }
   p {
     font-family: "Noto Sans TC";
@@ -59,9 +62,9 @@ const Cover = styled.div`
     font-size: 16px;
     line-height: 150%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 8px;
-    padding-bottom: 72px;
-    padding-left: 160px;
+    position: absolute;
+    top:82%;
+    left:8%;
   }
 `;
 const PersonCardWrapper = styled.div`
@@ -103,7 +106,7 @@ function Person() {
   //});//
   return (
     <PersonWrapper>
-      <Header />
+      <Navigation />
       <Cover>
         <h1>人物誌</h1>
         <p>記載了 Nobody 們的攀岩小故事</p>

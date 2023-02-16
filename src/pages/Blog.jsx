@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import Header from "../shared/Header";
+import Navigation from "../shared/Navigation";
 import Footer from "../shared/Footer";
 import Search from "../components/Search";
 import CardBlogList from "../components/CardBlogList";
@@ -19,7 +19,7 @@ const StyleCarousel = styled(Carousel)`
 function Blog() {
   return (
     <BlogWapper>
-      <Header />
+      <Navigation />
       <Box
         sx={{
           display: "flex",

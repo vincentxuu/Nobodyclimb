@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import styled from "styled-components";
-import BiographyList from "../components/BiograohyList.json";
+import BiographyList from "../constants/BiograohyList.json";
 import Box from "@mui/material/Box";
 
 const Container = styled.div`

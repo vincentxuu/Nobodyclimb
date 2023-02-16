@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import BlogList from "../components/BlogList.json";
+import BlogList from "../constants/BlogList.json";
 import img from"../images/photo/blog-mid-left.jpeg";
 import { Link } from "react-router-dom";
 

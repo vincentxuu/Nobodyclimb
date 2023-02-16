@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Header from "../shared/Header";
+import Navigation from "../shared/Navigation";
 import Footer from "../shared/Footer";
 import PhotoAlbumList from "../components/PhotoAlbumList";
 import Box from "@mui/material/Box";
@@ -9,6 +9,7 @@ import { CenterFocusStrong } from "@mui/icons-material";
 
 const PhotoWapper = styled.div`
   background: #f5f5f5;
+  
 
   h1 {
     font-family: "Noto Sans TC";
@@ -42,11 +43,13 @@ const PhotoWapper = styled.div`
 function Photo() {
   return (
     <PhotoWapper>
-      <Header />
+      <Navigation />
       <Box
         sx={{
           display: "flex",
           justifyContent: "center",
+          padding:'5%'
+
         }}
       >
         <Box
