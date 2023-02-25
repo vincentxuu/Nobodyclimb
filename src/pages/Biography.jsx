@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import Navigation from "../shared/Navigation";
-import Footer from "../shared/Footer";
-import Search from "../components/Search";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -12,15 +9,17 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
 import Typography from "@mui/material/Typography";
+import { StyleOutlined } from "@mui/icons-material";
+import { HashRouter, Route, Link } from "react-router-dom";
+import { Box } from "@mui/system";
 import CoverPhoto from "../images/photo/cover-photo.jpeg";
 import PersonLeft from "../images/photo/personleft.jpeg";
 import PersonMid from "../images/photo/personmid.jpeg";
 import PersonRight from "../images/photo/personright.jpeg";
 import { ReactComponent as ArrowRightCircle } from "../images/icon/arrow-right-circled.svg";
-import { StyleOutlined } from "@mui/icons-material";
-import { HashRouter, Route, Link } from "react-router-dom";
-import { Box } from "@mui/system";
-import TestBio from "../components/TestBio";
+import Search from "../components/Search";
+import Footer from "../shared/components/Footer";
+import Navigation from "../shared/components/Navigation";
 
 const PersonWrapper = styled.div`
   background: #f5f5f5;
@@ -42,7 +41,7 @@ const Cover = styled.div`
   background-blend-mode: multiply;
   background-size: cover;
   color: #ffff;
-  height:520px;
+  height: 520px;
   position: relative;
   h1 {
     font-family: "Noto Sans TC";
@@ -52,8 +51,8 @@ const Cover = styled.div`
     line-height: 150%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
-    top:70%;
-    left:8%;
+    top: 70%;
+    left: 8%;
   }
   p {
     font-family: "Noto Sans TC";
@@ -63,8 +62,8 @@ const Cover = styled.div`
     line-height: 150%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
-    top:82%;
-    left:8%;
+    top: 82%;
+    left: 8%;
   }
 `;
 const PersonCardWrapper = styled.div`
@@ -101,15 +100,15 @@ const StyleButton = styled.div`
 `;
 
 function Person() {
-  //const [currentPerson,setCruuentPerson]= useState({
-  //name:{
-  //});//
+  // const [currentPerson,setCruuentPerson]= useState({
+  // name:{
+  // });//
   return (
     <PersonWrapper>
       <Navigation />
       <Cover>
-        <h1>人物誌</h1>
-        <p>記載了 Nobody 們的攀岩小故事</p>
+        <Typography variant="h1">人物誌</Typography>
+        <Typography variant="body1">記載了 Nobody 們的攀岩小故事</Typography>
       </Cover>
       <Box
         sx={{
@@ -126,7 +125,7 @@ function Person() {
           <Box
             sx={{
               m: 2,
-              mt: 4
+              mt: 4,
             }}
           >
             <Search />
@@ -143,7 +142,12 @@ function Person() {
                   <CardContent>
                     <CardContentWrapper>
                       <CardContentZone>
-                        <Typography gutterBottom variant="h5" component="div">
+                        <Typography
+                          gutterBottom
+                          variant="h2"
+                          component="div"
+                          sx={{ fontSize: "26px" }}
+                        >
                           謝璿
                         </Typography>
                         <Typography variant="subtitle1" color="#8E8C8C">
@@ -169,7 +173,12 @@ function Person() {
                 <CardContent>
                   <CardContentWrapper>
                     <CardContentZone>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography
+                        gutterBottom
+                        variant="h2"
+                        component="div"
+                        sx={{ fontSize: "26px" }}
+                      >
                         奇瑋
                       </Typography>
                       <Typography variant="subtitle1" color="#8E8C8C">
@@ -194,7 +203,12 @@ function Person() {
                 <CardContent>
                   <CardContentWrapper>
                     <CardContentZone>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography
+                        gutterBottom
+                        variant="h2"
+                        component="div"
+                        sx={{ fontSize: "26px" }}
+                      >
                         小若
                       </Typography>
                       <Typography variant="subtitle1" color="#8E8C8C">

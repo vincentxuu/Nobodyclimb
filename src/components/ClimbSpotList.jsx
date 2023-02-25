@@ -14,40 +14,11 @@ const StyledImageList = styled(ImageList)`
     grid-template-columns: unset !important;
   }
 `;
-
-export default function TitlebarImageList() {
-  return (
-    <StyledImageList
-      sx={{
-        maxWidth: 1120,
-        height: 336,
-      }}
-      cols={3}
-    >
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=248&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            alt={item.title}
-            loading="lazy"
-          />
-          <ImageListItemBar
-            title={item.title}
-            subtitle={<span>by: {item.author}</span>}
-            position="below"
-          />
-        </ImageListItem>
-      ))}
-    </StyledImageList>
-  );
-}
-
 const itemData = [
   {
     img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    title: "Breakfast",
-    author: "@bkristastucchio",
+    title: "pogo",
+    author: "台北",
     rows: 2,
     cols: 2,
     featured: true,
@@ -116,3 +87,31 @@ const itemData = [
     cols: 2,
   },
 ];
+
+export default function TitlebarImageList() {
+  return (
+    <StyledImageList
+      sx={{
+        maxWidth: 1120,
+        height: 336,
+      }}
+      cols={3}
+    >
+      {itemData.map((item) => (
+        <ImageListItem key={item.img}>
+          <img
+            src={`${item.img}?w=248&fit=crop&auto=format`}
+            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            alt={item.title}
+            loading="lazy"
+          />
+          <ImageListItemBar
+            title={item.title}
+            subtitle={<span>地點: {item.author}</span>}
+            position="below"
+          />
+        </ImageListItem>
+      ))}
+    </StyledImageList>
+  );
+}

@@ -4,13 +4,12 @@ import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
-import { ReactComponent as LogoIcon } from "../images/logo/Nobodylimb-black.svg";
-import { ReactComponent as SearchIcon } from "../images/icon/icon_search.svg";
 import { Link } from "react-router-dom";
-import NavMenu from "../components/NavMenu";
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 import { border, Box } from "@mui/system";
-
+import { ReactComponent as LogoIcon } from "../../images/logo/Nobodylimb-black.svg";
+import { ReactComponent as SearchIcon } from "../../images/icon/icon_search.svg";
+import NavMenu from "../../components/NavMenu";
 
 const HeaderWrapper = styled.div`
   height: 83px;
@@ -122,13 +121,14 @@ const Header = () => {
           </Paper>
         </Search>
         <Box
-        sx={{
-          display:'none',
-          '@media (max-width: 767px)':{
-            display:'contents',
-            } 
-          }} >
-        <MenuIcon />
+          sx={{
+            display: "none",
+            "@media (max-width: 767px)": {
+              display: "contents",
+            },
+          }}
+        >
+          <MenuIcon />
         </Box>
       </HeaderLeft>
       <HeaderRight>
@@ -154,11 +154,11 @@ const Header = () => {
             </li>
           </ul>
         </Nav>
-        {/*<SignIn>
+        {/* <SignIn>
           <Button variant="outlined" color="inherit" size="large">
             登入
           </Button>
-        </SignIn>*/}
+        </SignIn> */}
       </HeaderRight>
     </HeaderWrapper>
   );

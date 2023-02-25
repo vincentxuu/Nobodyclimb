@@ -1,34 +1,28 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import Navigation from "../shared/Navigation";
-import Footer from "../shared/Footer";
-import CardPerson from "../components/CardPerson";
-import BioContText from "../components/BioContText";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import InputBase from "@mui/material/InputBase";
 import Typography from "@mui/material/Typography";
-import CoverPhoto from "../images/photo/cover-photo.jpeg";
-import PersonLeft from "../images/photo/personleft.jpeg";
-import PersonMid from "../images/photo/personmid.jpeg";
-import PersonRight from "../images/photo/personright.jpeg";
-import { ReactComponent as ArrowRightCircle } from "../images/icon/arrow-right-circled.svg";
-import { StyleOutlined } from "@mui/icons-material";
-import { HashRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import BioContText from "../components/BioContText";
+import CardPerson from "../components/CardPerson";
+import Footer from "../shared/components/Footer";
+import Navigation from "../shared/components/Navigation";
 import { ReactComponent as ArrowIconLeft } from "../images/icon/arrow-left.svg";
 
 const PersonWrapper = styled.div`
   background: #f5f5f5;
+  position: relative;
 `;
-
 const BackIcon = styled.div`
   background-color: #f5f5f5;
-  padding: 48px 0px 40px 255px;
+  padding: 1%;
+  position: absolute;
+  top: 4%;
+  left: 21%;
+  @media (max-width: 767px) {
+    top: 4%;
+    left: 4%;
+  }
   button {
     display: flex;
     border: 0px solid #1b1a1a;
@@ -48,6 +42,7 @@ const BackIcon = styled.div`
 
 const ContentTop = styled.div`
   background: #f5f5f5;
+  padding-top: 112px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,19 +80,19 @@ function Person() {
       <Navigation />
       <BackIcon>
         <Link to="/biography" style={{ textDecoration: "none" }}>
-          <button>
+          <Button>
             <ArrowIconLeft />
             <Typography variant="body1" component="p">
               人物誌
             </Typography>
-          </button>
+          </Button>
         </Link>
       </BackIcon>
       <ContentTop>
         <BioContText />
       </ContentTop>
       <ContentBottom>
-        <h2>相關文章</h2>
+        <Typography variant="h2">相關文章</Typography>
         <CardPerson />
         <Link to="/biography" style={{ textDecoration: "none" }}>
           <Button variant="outlined" size="large">

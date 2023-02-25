@@ -21,7 +21,6 @@ const PersonCardWrapper = styled.div`
 `;
 const PersonCardLeft = styled.div`
   padding: 10px 20px 10px 20px;
-
 `;
 const PersonCardMid = styled.div`
   padding: 10px 20px 10px 20px;
@@ -52,7 +51,12 @@ const PersonCard = () => {
           <CardContent>
             <CardContentWrapper>
               <CardContentZone>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h1"
+                  component="div"
+                  sx={{ fontSize: "26px" }}
+                >
                   謝璿
                 </Typography>
                 <Typography variant="subtitle1" color="#8E8C8C">
@@ -61,7 +65,7 @@ const PersonCard = () => {
               </CardContentZone>
               <ArrowRightCircle />
             </CardContentWrapper>
-            <Typography variant="body2" color="#1B1A1A">
+            <Typography variant="body1" color="#1B1A1A">
               攀岩像是在牆上跳舞，像是在牆上即興演出，像是在走一條迷宮，起點終點很明確，過程自由發揮，你就是答案。
             </Typography>
           </CardContent>
@@ -77,7 +81,12 @@ const PersonCard = () => {
           <CardContent>
             <CardContentWrapper>
               <CardContentZone>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h1"
+                  component="div"
+                  sx={{ fontSize: "26px" }}
+                >
                   奇瑋
                 </Typography>
                 <Typography variant="subtitle1" color="#8E8C8C">
@@ -86,7 +95,7 @@ const PersonCard = () => {
               </CardContentZone>
               <ArrowRightCircle />
             </CardContentWrapper>
-            <Typography variant="body2" color="#1B1A1A">
+            <Typography variant="body1" color="#1B1A1A">
               攀岩像是在牆上跳舞，像是在牆上即興演出，像是在走一條迷宮，起點終點很明確，過程自由發揮，你就是答案。
             </Typography>
           </CardContent>
@@ -102,7 +111,12 @@ const PersonCard = () => {
           <CardContent>
             <CardContentWrapper>
               <CardContentZone>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h1"
+                  component="div"
+                  sx={{ fontSize: "26px" }}
+                >
                   小若
                 </Typography>
                 <Typography variant="subtitle1" color="#8E8C8C">
@@ -111,7 +125,7 @@ const PersonCard = () => {
               </CardContentZone>
               <ArrowRightCircle />
             </CardContentWrapper>
-            <Typography variant="body2" color="#1B1A1A">
+            <Typography variant="body1" color="#1B1A1A">
               攀岩像是在牆上跳舞，像是在牆上即興演出，像是在走一條迷宮，起點終點很明確，過程自由發揮，你就是答案。
             </Typography>
           </CardContent>

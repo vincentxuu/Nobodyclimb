@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import Navigation from "../shared/Navigation";
-import Footer from "../shared/Footer";
-import Search from "../components/Search";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { Box } from "@mui/system";
+import Navigation from "../shared/components/Navigation";
+import Footer from "../shared/components/Footer";
+import Search from "../components/Search";
 import CoverPhoto from "../images/photo/climbspot-photo.jpeg";
 import ClimbSpotList from "../components/ClimbSpotList";
-import { Box } from "@mui/system";
-import ToggleButtonArea from "../components/ToogleButtonArea";
-import ToggleButtonType from "../components/ToogleButtonType";
 
 const ClimbSpotWrapper = styled.div`
   background: #f5f5f5;
@@ -19,7 +17,7 @@ const Cover = styled.div`
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
   background-size: cover;
-  height:520px;
+  height: 520px;
   color: #ffff;
   position: relative;
   h1 {
@@ -30,8 +28,8 @@ const Cover = styled.div`
     line-height: 150%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
-    top:70%;
-    left:8%;
+    top: 70%;
+    left: 8%;
   }
   p {
     font-family: "Noto Sans TC";
@@ -41,8 +39,8 @@ const Cover = styled.div`
     line-height: 150%;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
-    top:82%;
-    left:8%;
+    top: 82%;
+    left: 8%;
   }
 `;
 const StyleButton = styled.div`
@@ -66,8 +64,8 @@ function ClimbSpot() {
     <ClimbSpotWrapper>
       <Navigation />
       <Cover>
-        <h1>岩場介紹</h1>
-        <p>探索台灣各式各樣有趣的岩場</p>
+        <Typography variant="h1">岩場介紹</Typography>
+        <Typography variant="body1">探索台灣各式各樣有趣的岩場</Typography>
       </Cover>
       <Box
         sx={{
@@ -88,23 +86,6 @@ function ClimbSpot() {
             }}
           >
             <Search />
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                flexWrap:"wrap",
-                mt: "32px",
-              }}
-            >
-              <ToggleButtonArea />
-              <Box
-                sx={{
-                  mt: "32px",
-                }}
-              >
-                <ToggleButtonType />
-              </Box>
-            </Box>
           </Box>
           <ClimbSpotList />
         </Box>

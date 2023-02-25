@@ -10,8 +10,8 @@ const SearchWrapper = styled.div``;
 
 const StylePaper = styled(Paper)`
   @media (max-width: 767px) {
-      box-shadow: none;
-    }
+    box-shadow: none;
+  }
 `;
 
 const Search = () => {
@@ -25,17 +25,16 @@ const Search = () => {
           display: "flex",
           alignItems: "center",
           width: 240,
-          boxShadow: "none"
+          boxShadow: "none",
         }}
       >
-        <IconButton type="button" sx={{ p: "10px"}} aria-label="search">
+        <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
           <SearchIcon />
         </IconButton>
         <InputBase
           sx={{ ml: 1, flex: 1 }}
           placeholder="請輸入關鍵字"
-          inputProps={{ "aria-label": "search google maps" ,
-        }}
+          inputProps={{ "aria-label": "search google maps" }}
         />
       </StylePaper>
     </SearchWrapper>

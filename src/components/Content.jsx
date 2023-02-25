@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
+import { PhotoAlbum } from "@mui/icons-material";
 import { ReactComponent as LogoIconSmall } from "../images/logo/NobodyClimb.svg";
 import imgintro from "../images/photo/cont-intro.jpeg";
 import imgabout from "../images/photo/cont-about.jpeg";
-import Button from "@mui/material/Button";
 import PersonCard from "./CardPerson";
 import CardBlog from "./CardBlog";
 import PhotoAlbumList from "./PhotoAlbumList";
-import { Link } from "react-router-dom";
-import { PhotoAlbum } from "@mui/icons-material";
 
 const ContentWrapper = styled.div`
   @media (max-width: 767px) {
@@ -75,9 +76,9 @@ const ContPerson = styled.div`
 const ContBlog = styled.div`
   border-top: 1px solid #d2d2d2;
   text-align: center;
-  padding:5%;
+  padding: 5%;
 
-  h1 {
+  h2 {
     font-family: "Glow Sans TC";
     font-style: normal;
     font-weight: 700;
@@ -100,8 +101,8 @@ const ContPhoto = styled.div`
   align-items: center;
   border-top: 1px solid #d2d2d2;
   text-align: center;
-  padding:5%;
-  h1 {
+  padding: 5%;
+  h2 {
     font-family: "Glow Sans TC";
     font-style: normal;
     font-weight: 700;
@@ -178,11 +179,11 @@ const Content = () => {
   return (
     <ContentWrapper>
       <ContIntro>
-        <h1>小人物攀岩</h1>
+        <Typography variant="h1">小人物攀岩</Typography>
         <LogoIconSmall />
-        <p>
+        <Typography variant="body1">
           攀岩像是在牆上跳舞，像是在牆上即興演出，像是在走一條迷宮，起點終點很明確，過程自由發揮，你就是答案。
-        </p>
+        </Typography>
       </ContIntro>
       <ContPerson>
         <PersonCard />
@@ -193,13 +194,13 @@ const Content = () => {
         </Link>
       </ContPerson>
       <ContBlog>
-        <h1>探索攀岩</h1>
-        <p>關於攀岩的各種知識和故事</p>
+        <Typography variant="h2">探索攀岩</Typography>
+        <Typography variant="body1">關於攀岩的各種知識和故事</Typography>
         <CardBlog />
       </ContBlog>
       <ContPhoto>
-        <h1>精選影像</h1>
-        <p>看看小人物們攀岩的英姿吧</p>
+        <Typography variant="h2">精選影像</Typography>
+        <Typography variant="body1">看看小人物們攀岩的英姿吧</Typography>
         <PhotoAlbumList />
         <Link to="/photoalbum" style={{ textDecoration: "none" }}>
           <Button variant="outlined" size="large">
@@ -208,15 +209,15 @@ const Content = () => {
         </Link>
       </ContPhoto>
       <ContAbout>
-        <h2>關於小人物攀岩</h2>
+        <Typography variant="h2">關於小人物攀岩</Typography>
         <svg>
           <rect id="box" x="0" y="0" width="40" height="4" />
         </svg>
-        <p>
+        <Typography variant="body1">
           緣起於一個 Nobody 很喜歡這項運動，希望有更多 Nobody 也能一起來 Climb
           <br />
           當然過程中一定會有一些疑惑，或許這裡能帶給你一些解答或收穫
-        </p>
+        </Typography>
       </ContAbout>
     </ContentWrapper>
   );

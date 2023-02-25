@@ -1,15 +1,14 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Navigation from "../shared/Navigation";
-import Footer from "../shared/Footer";
-import PhotoAlbumList from "../components/PhotoAlbumList";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { CenterFocusStrong } from "@mui/icons-material";
+import Navigation from "../shared/components/Navigation";
+import Footer from "../shared/components/Footer";
+import PhotoAlbumList from "../components/PhotoAlbumList";
 
 const PhotoWapper = styled.div`
   background: #f5f5f5;
-  
 
   h1 {
     font-family: "Noto Sans TC";
@@ -34,8 +33,8 @@ const PhotoWapper = styled.div`
     @media (max-width: 767px) {
       margin-left: 15px;
     }
-    ul{
-      column-count:unset;
+    ul {
+      column-count: unset;
     }
   }
 `;
@@ -48,8 +47,7 @@ function Photo() {
         sx={{
           display: "flex",
           justifyContent: "center",
-          padding:'5%'
-
+          padding: "5%",
         }}
       >
         <Box

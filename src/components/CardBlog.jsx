@@ -17,7 +17,7 @@ const CardBlogWrapper = styled.div`
   flex-wrap: wrap;
   padding-top: 40px;
   @media (max-width: 767px) {
-    img{
+    img {
       width: 50%;
     }
   }
@@ -115,16 +115,16 @@ const CardBlog = () => {
   return (
     <CardBlogWrapper>
       <CardBlogLeft>
-        <h2>裝備介紹</h2>
+        <Typography variant="h2">裝備介紹</Typography>
       </CardBlogLeft>
       <CardBlogMidLeft>
-        <h2>技巧介紹</h2>
+        <Typography variant="h2">技巧介紹</Typography>
       </CardBlogMidLeft>
       <CardBlogMidRight>
-        <h2>技術研究</h2>
+        <Typography variant="h2">技術研究</Typography>
       </CardBlogMidRight>
       <CardBlogRight>
-        <h2>比賽介紹</h2>
+        <Typography variant="h2">比賽介紹</Typography>
       </CardBlogRight>
     </CardBlogWrapper>
   );

@@ -18,12 +18,14 @@ import { ReactComponent as ArrowIconLeft } from "../images/icon/arrow-left.svg";
 import { ReactComponent as ArrowIconRight } from "../images/icon/arrow-right.svg";
 import PersonLeft from "../images/photo/personleft.jpg";
 import PersonPhotoDown from "../images/photo/person-poto.jpg";
-import TestBio from "../components/TestBio";
 
 const ContentPersonWrapper = styled.div`
+  max-width: 100%;
   padding: 24px 64px 0px 64px;
   background-color: #ffffff;
-
+  @media (max-width: 767px) {
+    padding: 8%;
+  }
   h1 {
     font-family: "Noto Sans TC";
     font-style: normal;
@@ -52,6 +54,12 @@ const ContentPersonWrapper = styled.div`
     width: 802px;
     height: 360px;
     object-fit: cover;
+    @media (max-width: 767px) {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 `;
 
@@ -61,6 +69,9 @@ const BackWrapper = styled.div`
   padding: 24px 64px 56px 64px;
   max-width: 802px;
   color: #1b1a1a;
+  @media (max-width: 767px) {
+    padding: 24px 0px 56px 0px;
+  }
   h3 {
     font-family: "Noto Sans CJK TC";
     font-style: normal;
@@ -90,7 +101,7 @@ function ContentPerson() {
       <h1>攀岩小人物—謝璿</h1>
       <CardHeader subheader="更新日期  2023.01.02  " />
       <img
-        style={{ maxWidth: "802px", maxheight: "360px" }}
+        style={{ maxWidth: "100%", maxheight: "100%" }}
         src={PersonLeft}
         alt="Background"
       />

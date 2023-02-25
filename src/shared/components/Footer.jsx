@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Box from "@mui/material/Box";
-import { ReactComponent as LogoIconWhite } from "../images/logo/Nobodylimb-white.svg";
-import { ReactComponent as IconFacebook } from "../images/icon/icon-facebook.svg";
-import { ReactComponent as IconInstagram } from "../images/icon/icon-instagram.svg";
-import { ReactComponent as IconMail } from "../images/icon/icon-mail.svg";
+import Typography from "@mui/material/Typography";
+import { ReactComponent as LogoIconWhite } from "../../images/logo/Nobodylimb-white.svg";
+import { ReactComponent as IconFacebook } from "../../images/icon/icon-facebook.svg";
+import { ReactComponent as IconInstagram } from "../../images/icon/icon-instagram.svg";
+import { ReactComponent as IconMail } from "../../images/icon/icon-mail.svg";
 
 const FooterWapper = styled.div`
   height: 160px;
   background: rgb(27, 26, 26);
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   padding: 0px 160px 0px 160px;
   @media (max-width: 767px) {
@@ -67,7 +68,7 @@ const Footer = () => {
         }}
       >
         <LogoIconWhite />
-        <p>NobodyClimb © 2022.</p>
+        <Typography variant="body1">NobodyClimb © 2022.</Typography>
       </Box>
       <FooterIcon>
         <IconFacebook />

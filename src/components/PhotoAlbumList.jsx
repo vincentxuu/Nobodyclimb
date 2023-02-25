@@ -4,32 +4,11 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import styled from "@emotion/styled";
 
-
 const StyledImageList = styled(ImageList)`
   @media (max-width: 767px) {
     column-count: unset !important;
   }
 `;
-
-export default function MasonryImageList() {
-  return (
-    <Box sx={{ maxwidth: 1120 }}>
-      <StyledImageList variant="masonry" cols={3} gap={8}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-            />
-          </ImageListItem>
-        ))}
-      </StyledImageList>
-    </Box>
-  );
-}
-
 const itemData = [
   {
     img: "https://i.imgur.com/pmhwVbf.jpg",
@@ -80,3 +59,22 @@ const itemData = [
     title: "Coffee table",
   },
 ];
+
+export default function MasonryImageList() {
+  return (
+    <Box sx={{ maxwidth: 1120 }}>
+      <StyledImageList variant="masonry" cols={3} gap={8}>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <img
+              src={`${item.img}?w=248&fit=crop&auto=format`}
+              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              alt={item.title}
+              loading="lazy"
+            />
+          </ImageListItem>
+        ))}
+      </StyledImageList>
+    </Box>
+  );
+}
