@@ -2,7 +2,6 @@ import React from "react";
 import styled from "@emotion/styled";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { CenterFocusStrong } from "@mui/icons-material";
 import Navigation from "../shared/components/Navigation";
 import Footer from "../shared/components/Footer";
 import PhotoAlbumList from "../components/PhotoAlbumList";

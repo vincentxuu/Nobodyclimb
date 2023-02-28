@@ -17,7 +17,7 @@ const FooterWapper = styled.div`
   @media (max-width: 767px) {
     padding: 0px 20px 0px 20px;
   }
-  p {
+  h6 {
     color: #8e8c8c;
     font-family: "Noto Sans CJK TC";
     font-style: normal;
@@ -68,7 +68,7 @@ const Footer = () => {
         }}
       >
         <LogoIconWhite />
-        <Typography variant="body1">NobodyClimb © 2022.</Typography>
+        <Typography variant="subtitle1">NobodyClimb © 2022.</Typography>
       </Box>
       <FooterIcon>
         <IconFacebook />

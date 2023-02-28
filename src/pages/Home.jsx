@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import Navigation from "../shared/components/Navigation";
+import WeatherInfo from "../components/WeatherInfo";
 import Content from "../components/Content";
 import Footer from "../shared/components/Footer";
 
@@ -26,6 +27,7 @@ const theme = {
 
 const HomeWapper = styled.div`
   background-color: ${({ theme }) => theme.backgroundColor};
+  position: relative;
   @media (max-width: 767px) {
     width: 100%;
     img {
@@ -39,6 +41,7 @@ const Home = () => {
   return (
     <HomeWapper theme={theme.light}>
       <Navigation />
+      <WeatherInfo />
       <Content />
       <Footer />
     </HomeWapper>

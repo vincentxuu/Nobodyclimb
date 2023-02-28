@@ -1,4 +1,4 @@
-import React, { Box } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -11,9 +11,6 @@ import img from "../images/photo/blog-mid-left.jpeg";
 
 const CardWrapper = styled.div`
   padding: 12px;
-  //display: flex;
-  //flex-direction: row;
-  //margin: 0 auto;
   max-width: 1200px;
   background-color: #f5f5f5 !important;
 `;
@@ -21,18 +18,14 @@ const CardWrapper = styled.div`
 export default function ActionAreaCard() {
   return (
     <CardWrapper>
-      <Link to="/" style={{ textDecoration: "none" }}>
-        <Card
-          sx={{
-            maxWidth: 1000,
-            columns: 3,
-            // columnWidth: "50%",
-            // columnGap: "10px",
-            // columnRuleWidth: "#f5f5f5",
-          }}
-        >
-          {BlogList.map((item) => (
-            <CardActionArea key={item.title}>
+      <Card>
+        {BlogList.map((item) => (
+          <Link
+            to={`/blog/${item.id}`}
+            key={item.title}
+            style={{ textDecoration: "none" }}
+          >
+            <CardActionArea>
               <CardMedia
                 component="img"
                 height="140"
@@ -40,18 +33,22 @@ export default function ActionAreaCard() {
                 alt="green iguana"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  color="#000"
+                >
                   {item.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  {item.summary}
                 </Typography>
               </CardContent>
             </CardActionArea>
-          ))}
-        </Card>
-      </Link>
+          </Link>
+        ))}
+      </Card>
     </CardWrapper>
   );
 }
