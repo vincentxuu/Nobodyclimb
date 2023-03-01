@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "@emotion/styled";
 import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
@@ -10,6 +10,7 @@ import { border, Box } from "@mui/system";
 import { ReactComponent as LogoIcon } from "../../images/logo/Nobodylimb-black.svg";
 import { ReactComponent as SearchIcon } from "../../images/icon/icon_search.svg";
 import NavMenu from "../../components/NavMenu";
+import SideBar from "../../components/SideBar";
 
 const HeaderWrapper = styled.div`
   height: 83px;
@@ -94,9 +95,24 @@ const SignIn = styled.div`
 `;
 
 const Header = () => {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSiderbar = () => setSidebar(!sidebar);
+
   return (
     <HeaderWrapper>
       <HeaderLeft>
+        <Box
+          sx={{
+            display: "none",
+            "@media (max-width: 767px)": {
+              display: "contents",
+            },
+          }}
+        >
+          <MenuIcon onClick={showSiderbar} />
+          {sidebar && <SideBar active={setSidebar} />}
+        </Box>
         <Link to="/" style={{ textDecoration: "none" }}>
           <Logo>
             <LogoIcon />
@@ -120,16 +136,6 @@ const Header = () => {
             <InputBase sx={{ ml: 2, flex: 1 }} />
           </Paper>
         </Search>
-        <Box
-          sx={{
-            display: "none",
-            "@media (max-width: 767px)": {
-              display: "contents",
-            },
-          }}
-        >
-          <MenuIcon />
-        </Box>
       </HeaderLeft>
       <HeaderRight>
         <Nav>
