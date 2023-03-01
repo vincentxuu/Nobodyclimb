@@ -11,21 +11,35 @@ import img from "../images/photo/blog-mid-left.jpeg";
 
 const CardWrapper = styled.div`
   padding: 12px;
-  max-width: 1200px;
   background-color: #f5f5f5 !important;
+  display: flex;
 `;
 
 export default function ActionAreaCard() {
   return (
     <CardWrapper>
-      <Card>
+      <Card
+        sx={{
+          display: "flex",
+          margin: "2%",
+          padding: "2%",
+          " @media (max-width: 767px)": {
+            display: "flex",
+            flexDirection: "column",
+          },
+        }}
+      >
         {BlogList.map((item) => (
           <Link
             to={`/blog/${item.id}`}
             key={item.title}
             style={{ textDecoration: "none" }}
           >
-            <CardActionArea>
+            <CardActionArea
+              sx={{
+                padding: "5%",
+              }}
+            >
               <CardMedia
                 component="img"
                 height="140"
@@ -38,6 +52,7 @@ export default function ActionAreaCard() {
                   variant="h5"
                   component="div"
                   color="#000"
+                  fontSize="14px"
                 >
                   {item.title}
                 </Typography>

@@ -17,16 +17,22 @@ function Blog() {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
           justifyContent: "center",
-          alignItems: "center",
-          paddingTop: "64px",
+          padding: "3%",
+          " @media (max-width: 767px)": {
+            paddingTop: "15%",
+          },
         }}
       >
         <Box
           sx={{
-            display: "flex",
-            padding: "40px 0px 40px 0px",
+            position: "absolute",
+            top: "12%",
+            right: "20%",
+            " @media (max-width: 767px)": {
+              top: "12%",
+              right: "25%",
+            },
           }}
         >
           <Search />
