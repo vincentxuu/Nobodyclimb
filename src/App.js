@@ -7,6 +7,9 @@ import BioContent from "./pages/BioContent";
 import ClimbSpot from "./pages/ClimbSpot";
 import PhotoAlbum from "./pages/PhotoAlbum";
 import Blog from "./pages/Blog";
+import Login from "./pages/Login";
+import LoginTest from "./pages/LoginTest";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Route path="/climbspot" element={<ClimbSpot />} />
         <Route path="/photoalbum" element={<PhotoAlbum />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logintest" element={<LoginTest />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </Router>

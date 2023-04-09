@@ -13,7 +13,7 @@ const theme = {
     temperatureColor: "#757575",
     textColor: "#828282",
   },
-  
+
   dark: {
     backgroundColor: "#1F2022",
     foregroundColor: "#121416",

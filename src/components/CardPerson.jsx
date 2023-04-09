@@ -57,7 +57,7 @@ const PersonCard = () => {
                   component="div"
                   sx={{ fontSize: "26px" }}
                 >
-                  謝璿。
+                  謝璿
                 </Typography>
                 <Typography variant="subtitle1" color="#8E8C8C">
                   攀岩年資 | 3年

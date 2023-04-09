@@ -96,9 +96,7 @@ const SignIn = styled.div`
 
 const Header = () => {
   const [sidebar, setSidebar] = useState(false);
-
   const showSiderbar = () => setSidebar(!sidebar);
-
   return (
     <HeaderWrapper>
       <HeaderLeft>
@@ -160,11 +158,18 @@ const Header = () => {
             </li>
           </ul>
         </Nav>
-        {/* <SignIn>
-          <Button variant="outlined" color="inherit" size="large">
-            登入
-          </Button>
-        </SignIn> */}
+        <SignIn>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <Button
+              variant="outlined"
+              color="inherit"
+              size="large"
+              style={{ width: "104px", color: "black", textDecoration: "none" }}
+            >
+              登入
+            </Button>
+          </Link>
+        </SignIn>
       </HeaderRight>
     </HeaderWrapper>
   );
